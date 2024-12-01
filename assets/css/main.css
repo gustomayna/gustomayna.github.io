@@ -2471,6 +2471,19 @@ input, select, textarea {
 		table tfoot {
 			border-top: solid 2px rgba(212, 212, 255, 0.1);
 		}
+		
+		/* Adjust column styles */
+		table td:last-child {
+		    white-space: nowrap; /* Prevent wrapping of text */
+		    text-align: right; /* Align price text to the right */
+		    width: 1%; /* Let the column take only the space needed */
+		}
+
+		/* Optional: Ensure consistent width for price column in table headers */
+		table th:last-child {
+		    text-align: right;
+		    width: 1%; /* Ensures price column is consistent */
+		}
 
 		table.alt {
 			border-collapse: separate;
